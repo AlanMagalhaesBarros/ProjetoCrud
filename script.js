@@ -1,7 +1,9 @@
 'use strict'
-const APPLICATION_ID = 'auOHnlMCmGAhRvqCjKGWATdfPyvV9APbwrKulNk7';
-const REST_API_KEY = '3RliPCQngeDD91bU0HXyISKcM8By1xyldjE9icXR';
-const SERVER_URL = 'https://parseapi.back4app.com';
+require('dotenv').config();
+
+const APPLICATION_ID = process.env.APPLICATION_ID;
+const REST_API_KEY = process.env.REST_API_KEY;
+const SERVER_URL = process.env.SERVER_URL;
 
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
