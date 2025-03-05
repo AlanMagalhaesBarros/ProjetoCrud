@@ -1,11 +1,12 @@
+'use strict';
 
-'use strict'
+// Carrega as variáveis de ambiente do arquivo .env para o process.env
 require('dotenv').config();
 
+// Obtém as variáveis de ambiente
 const APPLICATION_ID = process.env.APPLICATION_ID;
 const REST_API_KEY = process.env.REST_API_KEY;
 const SERVER_URL = process.env.SERVER_URL;
-
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
 
